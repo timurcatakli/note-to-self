@@ -1,5 +1,14 @@
 # Note To Self - Web Development Cheatsheet
 
+## Table of Contents
+  - [Ruby Commands](#ruby-commands)
+  - [Sublime Shortcuts](#sublime-shortcuts)
+  - [Code Readability](#code-readability)
+  - [File Organization](#file-organization)
+  - [Software Suggestions](#software)
+  - [Config Options](#config-stuff)
+  - [Links](#links)
+
 ### GIT STEPS & COMMANDS
 ***
 
@@ -77,7 +86,7 @@ switch back to “dev” and continue working - this way you always have a worki
 ### RUBY COMMANDS
 
 #### **Ruby interactive help bash terminal**
-```
+```ruby
 ri -i
 ```
 #### **Ternary Operator**
