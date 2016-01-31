@@ -107,9 +107,9 @@ This makes comparing two symbols really fast (since only a pointer comparison is
 
 ### Benchmarking
 
-[Benchmarking]: images/benchmarking.png
+![Benchmarking](images/benchmarking.png "Benchmarking")
 
-![alt text](images/bigo.png "Logo Title Text 1")
+
 
 
 
