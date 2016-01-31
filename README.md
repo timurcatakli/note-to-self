@@ -3,14 +3,14 @@
 ### GIT STEPS & COMMANDS
 ***
 
-```
+```ruby
 git init
 ```
 
-```
+```ruby
 git status
 ```
-```
+```ruby
 git add
 ```
 ```
