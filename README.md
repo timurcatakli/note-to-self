@@ -1,13 +1,9 @@
 # Note To Self - Web Development Cheatsheet
 
 ## Table of Contents
+  - [Git Steps & Commands](#Git Steps & Commands)
+  - [My GIT Workflow](#my-git-workflow)
   - [Ruby Commands](#ruby-commands)
-  - [Sublime Shortcuts](#sublime-shortcuts)
-  - [Code Readability](#code-readability)
-  - [File Organization](#file-organization)
-  - [Software Suggestions](#software)
-  - [Config Options](#config-stuff)
-  - [Links](#links)
 
 ### GIT STEPS & COMMANDS
 ***
