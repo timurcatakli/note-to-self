@@ -1,7 +1,8 @@
 # Note To Self - Web Development Cheatsheet
 
-GIT STEPS & COMMANDS
-======
+### GIT STEPS & COMMANDS
+***
+
 ```
 git init
 ```
