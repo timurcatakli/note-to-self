@@ -4,6 +4,13 @@
   - [Git Steps & Commands](#Git Steps & Commands)
   - [My GIT Workflow](#my-git-workflow)
   - [Ruby Commands](#ruby-commands)
+  - [Benchmarking](#benchmarking)
+  -  [Big O - Binary Search](#Big O - Binary Search)
+  -  [SQLITE3 CREATE, ALTER, UPDATE METHODS](#SQLITE3 CREATE, ALTER, UPDATE METHODS)
+
+
+
+
 
 ### GIT STEPS & COMMANDS
 ***
@@ -51,6 +58,7 @@ rm -rf .git
 ```
 should suffice
 
+
 ### MY GIT WORKFLOW
 ***
 
@@ -77,6 +85,7 @@ git merge dev
 ```
 
 switch back to “dev” and continue working - this way you always have a working copy on master and if you make a mistake you may revert back - once you are done,  **push to origin** and **delete the branch 'dev'**
+
 
 
 ### RUBY COMMANDS
@@ -106,14 +115,17 @@ This makes comparing two symbols really fast (since only a pointer comparison is
 
 ***Also, unlike strings, symbols are immutable.***
 
+
 ### Benchmarking
 ***
 
 ![Benchmarking](images/benchmarking.png "Benchmarking")
 
+
 ### Big O - Binary Search
 ***
 ![Big O - Binary Search](images/bigo.png "Big O - Binary Search")
+
 
 ###SQLITE3 CREATE, ALTER, UPDATE METHODS
 ***
@@ -125,34 +137,52 @@ CREATE TABLE friends (
   birthday DATE);
  ```
  
-  
+```sql  
 INSERT INTO friends (id, name, birthday) VALUES
 (1, 'Jane Doe', 'May 19th, 1993');
-
+```
+```sql  
 INSERT INTO friends (id, name, birthday) VALUES
 (2, 'Joe Doe', 'May 18th, 1994');
+```
 
+```sql  
 INSERT INTO friends (id, name, birthday) VALUES
 (3, 'Frank Roosevelt', 'May 11th, 1995');
+```
 
+```sql  
 UPDATE friends
 SET name = "Jane Smith"
 WHERE id = 1;
+```
 
+```sql  
 ALTER TABLE friends ADD email STRING;
+```
 
+```sql  
 UPDATE friends
 SET email = 'jsmith@example.com'
 WHERE id = 1;
+```
 
+```sql  
 UPDATE friends
 SET email = 'jdoe@example.com'
 WHERE id = 2;
+```
 
+```sql  
 UPDATE friends
 SET email = 'froosevelt@example.com'
 WHERE id = 3;
+```
 
+```sql  
 DELETE FROM friends WHERE id = 1;
+```
 
+```sql  
 SELECT * FROM friends;
+```
