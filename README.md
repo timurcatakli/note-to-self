@@ -80,6 +80,7 @@ switch back to “dev” and continue working - this way you always have a worki
 
 
 ### RUBY COMMANDS
+***
 
 #### **Ruby interactive help bash terminal**
 ```ruby
@@ -106,10 +107,52 @@ This makes comparing two symbols really fast (since only a pointer comparison is
 ***Also, unlike strings, symbols are immutable.***
 
 ### Benchmarking
+***
 
 ![Benchmarking](images/benchmarking.png "Benchmarking")
 
+### Big O - Binary Search
+***
+![Big O - Binary Search](images/bigo.png "Big O - Binary Search")
 
+###SQLITE3 CREATE, ALTER, UPDATE METHODS
+***
 
+```sql
+CREATE TABLE friends (
+  id INTEGER,
+  name STRING,
+  birthday DATE);
+ ```
+ 
+  
+INSERT INTO friends (id, name, birthday) VALUES
+(1, 'Jane Doe', 'May 19th, 1993');
 
+INSERT INTO friends (id, name, birthday) VALUES
+(2, 'Joe Doe', 'May 18th, 1994');
 
+INSERT INTO friends (id, name, birthday) VALUES
+(3, 'Frank Roosevelt', 'May 11th, 1995');
+
+UPDATE friends
+SET name = "Jane Smith"
+WHERE id = 1;
+
+ALTER TABLE friends ADD email STRING;
+
+UPDATE friends
+SET email = 'jsmith@example.com'
+WHERE id = 1;
+
+UPDATE friends
+SET email = 'jdoe@example.com'
+WHERE id = 2;
+
+UPDATE friends
+SET email = 'froosevelt@example.com'
+WHERE id = 3;
+
+DELETE FROM friends WHERE id = 1;
+
+SELECT * FROM friends;
