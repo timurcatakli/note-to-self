@@ -3,7 +3,7 @@
 ### GIT STEPS & COMMANDS
 ***
 
-```ruby
+```bash
 git init
 ```
 
