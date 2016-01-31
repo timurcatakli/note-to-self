@@ -5,8 +5,8 @@
   - [My GIT Workflow](#my-git-workflow)
   - [Ruby Commands](#ruby-commands)
   - [Benchmarking](#benchmarking)
-  -  [Big O - Binary Search](#Big O - Binary Search)
-  -  [SQLITE3 CREATE, ALTER, UPDATE METHODS](#SQLITE3 CREATE, ALTER, UPDATE METHODS)
+  -  [Big O - Binary Search](#big-o---binary-search)
+  -  [SQLITE3 CREATE, ALTER, UPDATE METHODS](#sqlite3-create-alter-update-methods)
 
 
 
