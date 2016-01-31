@@ -106,3 +106,9 @@ This makes comparing two symbols really fast (since only a pointer comparison is
 ***Also, unlike strings, symbols are immutable.***
 
 ### Benchmarking
+
+[Benchmarking]: images/benchmarking.png
+
+
+
+
