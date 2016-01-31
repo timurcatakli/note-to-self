@@ -3,7 +3,7 @@
 ### GIT STEPS & COMMANDS
 ***
 
-```bash
+```Bash
 git init
 ```
 
