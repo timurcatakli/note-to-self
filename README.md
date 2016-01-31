@@ -90,10 +90,10 @@ condition ? true_expression : false_expression
 
 #### **:foo**
 :foo is a **symbol** named "foo". Symbols have the distinct feature that any two symbols named the same will be identical:
-```
+```ruby
 "foo".equal? "foo"  # false
 ```
-```
+```ruby
 :foo.equal? :foo    # true
 ```
 This makes comparing two symbols really fast (since only a pointer comparison is involved, as opposed to comparing all the characters like you would in a string), plus you won't have a zillion copies of the same symbol floating about.
