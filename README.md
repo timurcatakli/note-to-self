@@ -7,7 +7,7 @@
   - [Benchmarking](#benchmarking)
   -  [Big O - Binary Search](#big-o---binary-search)
   -  [SQLITE3 CREATE, ALTER, UPDATE METHODS](#sqlite3-create-alter-update-methods)
-  -  [Objects Array](#Objects-Array)
+  -  [Objects Array](#objects-array)
 
 
 
