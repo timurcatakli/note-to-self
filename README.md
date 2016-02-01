@@ -193,6 +193,24 @@ Give me the hire date, first name, and last name of all employees hired before F
 SELECT hire_date, first_name, last_name FROM employees WHERE hire_date < '2011-02-15'
 ```
 
+Give me a list of all employees whose name begins with "A"
+
+```sql
+SELECT * FROM employees WHERE first_name LIKE 'A%'
+```
+
+Give me a list of every track where composer is blank
+```sql
+SELECT * FROM tracks WHERE composer IS NULL
+```
+
+Give me a list of the 10 most expensive invoices from Germany
+```sql
+SELECT * FROM invoices WHERE billing_country = 'Germany' ORDER BY total DESC LIMIT 10
+```
+
+
+
 ### Objects Array
 ***
 
