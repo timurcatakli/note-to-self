@@ -187,6 +187,11 @@ DELETE FROM friends WHERE id = 1;
 ```sql  
 SELECT * FROM friends;
 ```
+Give me the hire date, first name, and last name of all employees hired before February 15, 2011
+
+```sql
+SELECT hire_date, first_name, last_name FROM employees WHERE hire_date < '2011-02-15'
+```
 
 ### Objects Array
 ***
