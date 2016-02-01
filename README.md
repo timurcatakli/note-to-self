@@ -209,6 +209,25 @@ Give me a list of the 10 most expensive invoices from Germany
 SELECT * FROM invoices WHERE billing_country = 'Germany' ORDER BY total DESC LIMIT 10
 ```
 
+
+Find the number of invoices sent to the city of "Santiago"
+
+```sql
+SELECT COUNT(id) FROM invoices WHERE billing_city = 'Santiago'
+```
+
+**SQL Inner Join**
+
+```sql
+SELECT artists.name, albums.title
+FROM artists
+INNER JOIN albums
+ON artists.id = albums.artist_id;
+```
+
+
+
+
 ### SQL Naming Conventions
 ***
 
