@@ -220,3 +220,7 @@ DVD.new
 ```ruby
 DVD.all_instances
 ```
+### Metaprogramming
+***
+
+Metaprogramming, used wisely, has great value; ease of metaprogramming is a strong argument in favor of dynamic typing.
