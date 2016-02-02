@@ -253,7 +253,7 @@ Foreign keys are used to connect one table to another. Generally they will be us
 
 
 # Objects Array
-
+tim
 ```ruby
 class DVD
   @@array = Array.new
@@ -284,13 +284,13 @@ DVD.new
 DVD.all_instances
 ```
 #Metaprogramming
-***
+
 
 Metaprogramming, used wisely, has great value; ease of metaprogramming is a strong argument in favor of dynamic typing.
 
 
 # Yield in Ruby Basics
-***
+
 
 The yield method allows us to pass behaviour into a method, it makes methods much more flexible.
 
@@ -442,3 +442,95 @@ end
 Be conscious about the direction of your dependencies -- build classes that depend on things that change less often than they do.
 
 The Dependency Inversion Principle is primarily about reversing the conventional direction of dependencies from "higher level" components to "lower level" components such that "lower level" components are dependent upon the interfaces owned by the "higher level" components. (Note: "higher level" component here refers to the component requiring external dependencies/services, not necessarily its conceptual position within a layered architecture.) In doing so, coupling isn't reduced so much as it is shifted from components that are theoretically less valuable for reuse to components which are theoretically more valuable for reuse.
+
+
+# Class Inheritance & Passing Custom Arguments
+
+```ruby
+class Bicycle
+  attr_reader :size, :chain, :tire_size
+
+  def initialize(args={})
+    @size       = args[:size]
+    @chain      = args[:chain]     || default_chain
+    @tire_size  = args[:tire_size] || default_tire_size
+  end
+
+  def default_chain       # <- common default
+    '10-speed'
+  end
+
+  def default_tire_size
+    raise NotImplementedError
+    
+  end
+
+end
+
+class RoadBike < Bicycle
+  # ...
+  def default_tire_size   # <- subclass default
+    '23'
+  end
+end
+
+class MountainBike < Bicycle
+  # ...
+  def default_tire_size   # <- subclass default
+    '2.1'
+  end
+end
+```
+```ruby
+road_bike = RoadBike.new(
+              size:       'M',
+              tape_color: 'red' )
+
+p road_bike.tire_size     # => '23'
+p road_bike.chain         # => "10-speed"
+
+mountain_bike = MountainBike.new(
+                  size:         'S',
+                  front_shock:  'Manitou',
+                  rear_shock:   'Fox')
+
+p mountain_bike.tire_size # => '2.1'
+p road_bike.chain         # => "10-speed"
+```
+
+
+# SQLite3/Ruby Interface
+
+This module allows Ruby programs to interface with the SQLite3 database engine (www.sqlite.org).
+
+You must have the SQLite engine installed in order to build this module.
+
+Note that this module is only compatible with SQLite 3.6.16 or newer.
+
+
+```ruby
+require "sqlite3"
+
+# Open a database
+db = SQLite3::Database.new "test.db"
+
+# Create a database
+rows = db.execute "create table numbers (\nname varchar(30),\nval int\n);\n"
+
+# Execute a few inserts
+{
+  "one" => 1,
+  "two" => 2,
+}.each do |pair|
+  db.execute "insert into numbers values ( ?, ? )", pair
+end
+
+# Execute inserts with parameter markers
+db.execute("INSERT INTO students (name, email, grade, blog) 
+            VALUES (?, ?, ?, ?)", [@name, @email, @grade, @blog])
+
+# Find a few rows
+db.execute( "select * from numbers" ) do |row|
+  p row
+end
+```
