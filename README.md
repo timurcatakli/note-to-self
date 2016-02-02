@@ -16,7 +16,6 @@
 
 
 # GIT STEPS & COMMANDS
-***
 
 ```Bash
 git init
@@ -91,7 +90,7 @@ switch back to “dev” and continue working - this way you always have a worki
 
 
 # RUBY COMMANDS
-***
+
 
 #### Ruby interactive help bash terminal
 ```ruby
@@ -119,18 +118,18 @@ This makes comparing two symbols really fast (since only a pointer comparison is
 
 
 #Benchmarking
-***
+
 
 ![Benchmarking](images/benchmarking.png "Benchmarking")
 
 
 #Big O - Binary Search
-***
+
 ![Big O - Binary Search](images/bigo.png "Big O - Binary Search")
 
 
 #SQLITE3 CREATE, ALTER, UPDATE METHODS
-***
+
 
 ```sql
 CREATE TABLE friends (
@@ -230,9 +229,6 @@ ON artists.id = albums.artist_id;
 
 
 # SQL Naming Conventions
-***
-
-
 
 Technically you can use any field names and table names you want, but there are some conventions that are generally followed for sanity.
 
@@ -257,7 +253,6 @@ Foreign keys are used to connect one table to another. Generally they will be us
 
 
 # Objects Array
-***
 
 ```ruby
 class DVD
