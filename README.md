@@ -8,6 +8,8 @@
   -  [Big O - Binary Search](#big-o---binary-search)
   -  [SQLITE3 CREATE, ALTER, UPDATE METHODS](#sqlite3-create-alter-update-methods)
   -  [Objects Array](#objects-array)
+  - [Metaprogramming](#metaprogramming)
+  - [Yield in Ruby Basics](#yield-in-ruby-basics)
 
 
 
@@ -291,3 +293,59 @@ DVD.all_instances
 ***
 
 Metaprogramming, used wisely, has great value; ease of metaprogramming is a strong argument in favor of dynamic typing.
+
+
+### Yield in Ruby Basics
+***
+
+The yield method allows us to pass behaviour into a method, it makes methods much more flexible.
+
+Common ruby methods like **each** use yield.
+
+
+**Example 1: The simplest yield ever**
+
+Define the method with a yield
+```ruby
+def yield_method_1
+  yield 
+end
+```
+call the method and send it behavior
+```ruby
+p yield_method_1 {puts "this is behaviour being passed in"}
+```
+
+**Example 2: Passing block variable into a yield**
+
+the value of this variable is set in the yield
+
+```ruby
+def yield_method_2
+  yield 15
+  puts "additional code goes here"
+end
+```
+```
+p yield_method_2 { |num|  
+  puts "This is behaviour being passed in."
+  puts "It using a block var with value #{num}"
+  }
+```
+
+**Example 3: working with arrays and loops - passing the array as an argument** 
+
+```ruby
+def yield_method_3(nums)
+  while nums.length > 0
+    item = nums.pop 
+    yield item
+  end
+end
+```
+```ruby
+my_nums =[1,2,5]
+
+p yield_method_3(my_nums) {|num| puts "The last value in the array is : #{num}"}
+
+```
