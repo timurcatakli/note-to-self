@@ -5,11 +5,13 @@
   - [My GIT Workflow](#my-git-workflow)
   - [Ruby Commands](#ruby-commands)
   - [Benchmarking](#benchmarking)
-  -  [Big O - Binary Search](#big-o---binary-search)
-  -  [SQLITE3 CREATE, ALTER, UPDATE METHODS](#sqlite3-create-alter-update-methods)
-  -  [Objects Array](#objects-array)
+  - [Big O - Binary Search](#big-o---binary-search)
+  - [SQLITE3 CREATE, ALTER, UPDATE METHODS](#sqlite3-create-alter-update-methods)
+  - [Objects Array](#objects-array)
   - [Metaprogramming](#metaprogramming)
   - [Yield in Ruby Basics](#yield-in-ruby-basics)
+  - [Sqlite3 Ruby Interface](#sqlite3ruby-interface)
+  
 
 
 
