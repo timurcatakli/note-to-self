@@ -11,11 +11,8 @@
   - [Metaprogramming](#metaprogramming)
   - [Yield in Ruby Basics](#yield-in-ruby-basics)
   - [Sqlite3 Ruby Interface](#sqlite3ruby-interface)
+  - [Active Record - Rake - SQLite3](#https://github.com/timurcatakli/note-to-self/blob/master/active_record.md)
   
-
-
-
-
 
 # GIT STEPS & COMMANDS
 
