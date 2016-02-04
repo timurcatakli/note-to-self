@@ -2,7 +2,6 @@
 
 ## Table of Contents
   - [First Page](https://github.com/timurcatakli/note-to-self)
-  <!-- - [Git Steps & Commands](#Git Steps & Commands) -->
   
 
 
