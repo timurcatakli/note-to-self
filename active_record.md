@@ -1,8 +1,8 @@
 # Note To Self - Active Record - Rake - SQLite3
 
 ## Table of Contents
-  - [First Page](readme.md)
-  - [Git Steps & Commands](#Git Steps & Commands)
+  - [First Page](https://github.com/timurcatakli/note-to-self)
+  <!-- - [Git Steps & Commands](#Git Steps & Commands) -->
   
 
 
@@ -15,6 +15,8 @@
 $ bundle install
 $ bundle exec rake db:create
 $ bundle exec rake db:migrate
+$ bundle exec rake db:seed
+$ bundle exec rake console
 ```
 
 ### Rake Migration File Creator Sample Commands
@@ -56,4 +58,51 @@ $ sqlite3 db/database.sqlite3
 ```bash
 $ sqlite PRAGMA table_info(dogs);
 ```
+
+#Active Record Commands
+
+```bash
+Dog.all
+```
+
+```bash
+Dog.where(age: 1)
+```
+
+```bash
+Dog.where("age = ? and name like ?", 1, '%Te%')
+```
+
+```bash
+Dog.order(age: :desc)
+```
+
+```bash
+Dog.limit(2)
+```
+
+```bash
+Dog.count
+```
+
+```bash
+Dog.pluck(:name, :age)
+```
+
+```bash
+Dog.first
+```
+
+```bash
+Dog.find(3)
+```
+
+```bash
+Dog.find_by(name: "Jayda")
+```
+```bash
+Dog.order(name: :asc).where(age: 1).limit(1)
+
+```
+
 
