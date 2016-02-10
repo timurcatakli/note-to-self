@@ -104,4 +104,57 @@ Dog.order(name: :asc).where(age: 1).limit(1)
 
 ```
 
+#Rake Methods
+```bash
+Bash Command: be rake -T
+```
+
+```bash
+rake console             # Start IRB with application environment loaded
+rake db:create           # Create the database
+rake db:drop             # Drop the database
+rake db:migrate          # Migrate the database
+rake db:rollback         # rollback your migration--use STEP=number to step back multip...
+rake db:seed             # populate the database with sample data
+rake db:version          # Returns the current schema version number
+rake generate:migration  # Create an empty migration in db/migrate, e.g., rake generate...
+rake generate:model      # Create an empty model in app/models, e.g., rake generate:mod...
+rake generate:spec       # Create an empty model spec in spec, e.g., rake generate:spec...
+rake spec                # Run the spec suite
+```
+
+# Active Record Table Related Commands
+
+```bash
+ActiveRecord::Base.connection.tables
+
+[
+    [0] "schema_migrations",
+    [1] "todos"
+]
+```
+
+
+```bash
+Todo.column_names
+
+[
+    [0] "id",
+    [1] "description"
+]
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
