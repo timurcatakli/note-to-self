@@ -1,15 +1,5 @@
 # Note To Self - REST
 
-## Table of Contents
-  - [First Page](https://github.com/timurcatakli/note-to-self)
-  
-
-
-
-
-
-# What is REST?
-
 ## REST stands for:
 REpresentational
 State

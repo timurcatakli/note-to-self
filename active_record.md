@@ -1,30 +1,12 @@
 # Note To Self - Active Record - Rake - SQLite3
 
-## Table of Contents
-  - [First Page](https://github.com/timurcatakli/note-to-self)
   
-
-
-
-
-
 # Bundle Commands
 
 ```bash
-$ bundle install
-$ bundle exec rake db:create
-$ bundle exec rake db:migrate
-$ bundle exec rake db:seed
-$ bundle exec rake console
-```
+be = shortcut for bundleexec
 
-### Rake Migration File Creator Sample Commands
-Following will create migration files with a timestamp in the file name
-
-
-```bash
-$ bundle exec rake generate:migration NAME=create_people
-$ bundle exec rake generate:migration NAME=create_dogs
+be rake db:create && be rake db:migrate
 $ bundle exec rake generate:migration NAME=create_ratings
 $ bundle exec rake generate:migration NAME=remove_from_dogs
 $ bundle exec rake generate:migration NAME=rename_raterid
@@ -136,6 +118,8 @@ ActiveRecord::Base.connection.tables
 
 
 ```bash
+Dog.connection
+
 Todo.column_names
 
 [
@@ -144,17 +128,31 @@ Todo.column_names
 ]
 ```
 
+### Save!
+Save!: It saves and raises an error
+Save: Simply saves and do not raise an error
+
+
+
+Below method forces to save after increase
+```
+def age!
+self.age += 1; self.save
+end
+```
 
 
 
 
+### Find
+
+find_by_id(1) and find(1) are pretty much the same except
+find_by_id(1) returns nil.
 
 
+### Postgres
 
-
-
-
-
-
-
-
+which postgres terminal command
+```
+>>$ /usr/local/bin/postgres
+```
