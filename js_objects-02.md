@@ -16,3 +16,37 @@ var blackRabbit = new Rabbit("black");
 console.log(blackRabbit.type);
 // → black
 ```
+
+```javascript
+function Tree(){
+  this.age = 0;
+  this.height = 0;
+  this.name = "Orange Tree";
+  this.orangeCount = 0;
+  this.isAlive = true;
+};
+
+Tree.prototype.grow = function(){
+  this.age += 1;
+  this.height += 10;
+
+  if (this.age >= MAX_AGE){
+    this.isAlive = false;
+  };  
+
+  if (this.age < FRUIT_BEARING_AGE){
+
+  } else {
+
+    if (this.isAlive === true){
+      this.orangeCount += Math.floor(Math.random() * 10) + 1;
+    }
+  };
+
+
+};
+
+Tree.prototype.dropOrange = function(){
+    this.orangeCount -= 1;
+};
+```
