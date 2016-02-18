@@ -50,3 +50,26 @@ Tree.prototype.dropOrange = function(){
     this.orangeCount -= 1;
 };
 ```
+
+```javascript
+var tree = new Tree();
+console.log("Age : " + tree.age);
+console.log("Height : " + tree.height);
+console.log("Orange Count : " + tree.orangeCount);
+console.log("Alive : " + tree.isAlive);
+console.log("=============TREE GROWS 1 YEAR===================");
+tree.grow();
+console.log("Age : " + tree.age);
+console.log("Height : " + tree.height);
+console.log("Orange Count : " + tree.orangeCount);
+console.log("Alive : " + tree.isAlive);
+console.log("=============TREE GROWS 3 YEARS===================");
+tree.grow();
+tree.grow();
+tree.grow();
+console.log("Age : " + tree.age);
+console.log("Height : " + tree.height);
+console.log("Orange Count : " + tree.orangeCount);
+console.log("Alive : " + tree.isAlive);
+
+```
