@@ -1,4 +1,4 @@
-# Constructors
+# Objects created with a "constructor" and "prototype".
 
 A more convenient way to create objects that derive from some shared prototype is to use a constructor. In JavaScript, calling a function with the new keyword in front of it causes it to be treated as a constructor. The constructor will have its this variable bound to a fresh object, and unless it explicitly returns another object value, this new object will be returned from the call.
 
