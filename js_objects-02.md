@@ -153,7 +153,7 @@ var myOtherObject = mySpecialObject;
 
 ### Constructor Functions
 
-If I want to be able to create different instances of an object, I can use a constructor function to accomplish this.  
+##If I want to be able to create different instances of an object, I can use a constructor function to accomplish this.##
 
 This is the closest thing to writing a class in JS that you will see
 	
