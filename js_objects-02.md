@@ -96,7 +96,7 @@ I can give it properties and define functions
 
 Notice this is similar to a ruby hash in that it contains name:value pairs
 
-***If I know that I'm only going to have one instance of this object and not need to create others, this is perfectly ok.***
+##If I know that I'm only going to have one instance of this object and not need to create others, this is perfectly ok.##
 
 Typically we use these types of objects to pass data (as we do on an ajax request)
 
