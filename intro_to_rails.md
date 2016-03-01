@@ -51,7 +51,11 @@ Prefix	Verb 	URI Pattern     	Controller#Action
 info  	GET  	/info(.:format) 	static#info
 ```
 
-To get the routes use `rake routes`
+Once we have the prefix we can use it the following way:
+
+`app.info_path` or `app.info_url`
+
+To get the routes use `be rake routes`
 
 static controller and info action does not exist so lets generate it.
 
