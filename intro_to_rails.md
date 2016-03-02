@@ -87,3 +87,24 @@ be rake db:create db:migrate
 </body>
 </html>
 ```
+
+## Authorization with Devise Gem
+
+If you need to create a user using Rails Console then follow these steps
+```
+password = '12345678'
+```
+```
+new_hashed_password = User.new(:password => password).encrypted_password
+```
+
+Assign the password to a variable as string then create hashed version of it.
+Then create a new object like
+
+```
+a = Admin.new
+a.email = "test@test.com"
+a.password = new_hashed_password
+a.save
+```
+
