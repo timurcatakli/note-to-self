@@ -4,6 +4,29 @@
 **A palindromic number** is a number (in some base ) that is the same when written forwards or backwards, i.e., of the form . The first few palindromic numbers are therefore are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99, 101, 111, 121, ... (OEIS A002113).
 
 ```ruby
+def is_palindrome?(str)
+  str = str.gsub(/[ ]/, '')
+  start = 0
+  fin = str.length - 1
+
+    while fin >= start
+    if str[fin] == str[start]
+      fin -= 1
+      start += 1
+    else
+      return false
+    end
+  end
+
+  return true
+end
+
+p is_palindrome?('race car')
+```
+
+
+
+```ruby
 array.delete_at(0)
 ```
 
