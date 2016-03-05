@@ -1,6 +1,7 @@
 * (http://myprogrammingblog.com/2015/01/19/how-to-reverse-a-string-not-using-built-in-reverse-method-how-to-reverse-every-word-in-a-sentence-part1-is-ruby/)
 * (https://www.youtube.com/watch?v=OrtQ6LdK0lk)
 
+**A palindromic number** is a number (in some base ) that is the same when written forwards or backwards, i.e., of the form . The first few palindromic numbers are therefore are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99, 101, 111, 121, ... (OEIS A002113).
 
 ```ruby
 array.delete_at(0)
