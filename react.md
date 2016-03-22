@@ -63,3 +63,15 @@ module.exports = {
 };
 ```
 The entry path could be given as a relative one. The context field can be used to configure that lookup. Given plenty of places expect absolute paths, I prefer to use absolute paths everywhere to avoid confusion.
+
+If you execute ***node_modules/.bin/webpack***, you should see output like this:
+```
+Hash: 2dca5a3850ce5d2de54c
+Version: webpack 1.12.13
+Time: 85ms
+    Asset     Size  Chunks             Chunk Names
+bundle.js  1.75 kB       0  [emitted]  app
+   [0] ./app/index.js 144 bytes {0} [built]
+   [1] ./app/component.js 136 bytes {0} [built]
+```
+This means you have a build at your output directory. You can open the build/index.html file directly through a browser to examine the results. On OS X open ./build/index.html works.
