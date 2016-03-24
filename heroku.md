@@ -3,7 +3,7 @@
   
 # Hunter Commands Starts Here - needs to be edited and shit
 
-eroku pg:reset DATABASE_URL
+heroku pg:reset DATABASE_URL
 reset the database, drops and creates but it doest migrate or seed
 
 reset the database even if there is no database
