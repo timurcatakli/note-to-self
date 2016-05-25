@@ -99,6 +99,12 @@ $ heroku logs --tail
 Press Control+C to stop streaming the logs.
 ```
 
+### Rename Heroku App
+
+```
+heroku apps:rename ng-pixar --app secure-mountain-64155
+```
+
 ###Define a Procfile###
 
 Use a ```Procfile```, a text file in the root directory of your application, to explicitly declare what command should be executed to start your app.
